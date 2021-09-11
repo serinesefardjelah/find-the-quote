@@ -17,3 +17,6 @@ body .hidewhite{
     display: none;
     /* color: darkred; */
 }
+p{
+    display: inline;
+}

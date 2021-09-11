@@ -11,7 +11,9 @@ function lightsOff(){
     body.style.backgroundColor = "black";
     circle.style.display = "block";
     btnOff.style.display="none";
+    
     btnOn.style.display="block";
+    p.style.display="inline";
     for(var i=0; i< hidetext.length; i++){
         hidetext[i].style.display="block";
     }
