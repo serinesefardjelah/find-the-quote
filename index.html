@@ -7,22 +7,31 @@
     <title>DOM Project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
+    
+    
+    <audio id="sound">   
+        <source src="js/Congratulations.mp3" /></audio>  
     <div class="circle"></div>
     
     <div>
         <ul>
             <li> <button id="off"> switch off </button> </li>
             <li> <button id="on"> switch On </button></li>
-            
+           
         </ul>
         
     </div>
-    <div>
+    <form name="Form" onsubmit="return validate()">
+        <label  for="fname"></label>
+        <input type="text" id="result" name="result" placeholder="The hidden text is...">
+        <input id ="submit" type="submit" value="Submit"> 
+    </form>
+    <div id="balloon-container">
         <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quo. Dolor consectetur mollitia ea quo adipisci saepe similique quod debitis explicabo quis. Sit modi necessitatibus id tempore delectus eaque cum?
         Velit, esse enim quos nemo, rem quas consequuntur molestias maxime doloribus reprehenderit id soluta totam nulla adipisci dicta, dolorem et placeat quod necessitatibus eligendi fugit nam delectus voluptas. Delectus, pariatur.
         Pariatur, tempore nulla. At porro quam quae pariatur mollitia incidunt eaque temporibus quas sint nemo, repellat numquam ad, labore beatae sed eligendi laudantium facere dolores! Laboriosam, perspiciatis dolor. Ex, explicabo?
-        Nisi sapiente mollitia delectus <p class="hidewhite"> "It is"  </p> deserunt deleniti provident vero perferendis, quis suscipit accusamus accusantium error excepturi, facere numquam rerum. Explicabo modi illum nulla nihil temporibus corporis aliquam sunt, porro culpa quod?
+        Nisi sapiente mollitia delectus <p class="hidewhite"> "It is" </p> deserunt deleniti provident vero perferendis, quis suscipit accusamus accusantium error excepturi, facere numquam rerum. Explicabo modi illum nulla nihil temporibus corporis aliquam sunt, porro culpa quod?
         Delectus tempore beatae a eos quod cupiditate voluptate ipsum debitis iste excepturi praesentium alias mollitia totam reiciendis vel quia laudantium, sed laboriosam labore ut placeat explicabo laborum nam impedit? Modi.
         Magnam minus vero iste eaque exercitationem libero dicta debitis nam sint iusto quisquam deleniti rem, saepe eius perferendis assumenda ratione in repudiandae. Deleniti quasi ipsa nisi tempore! Sequi, nihil incidunt.</p>
         <p class="hidewhite"> "during "</p>
@@ -38,10 +47,13 @@
         Vel laborum magnam nobis cumque, fugit quis<p class="hidewhite">"must focus" </p>  aliquid facilis repudiandae dolorum quo quaerat, corrupti nesciunt quidem iure nihil necessitatibus doloribus delectus recusandae aperiam omnis. Eaque voluptas aliquam similique deleniti ipsum?
         Impedit facilis illum sint qui ipsa, velit quo hic voluptatibus quaerat. Corporis, in tempore autem ob reprehenderit expedita quod doloremque natus magni exercitationem ducimus voluptate quas! Dolorem, autem quia.
         Fugit modi deleniti repudiandae. Commodi fuga dolor harum distinctio natus placeat? Veritatis beatae cumque consectetur minus aliquid fuga saepe. Cumque blanditiis vel sequi quo eligendi aut sunt accusamus! Ipsam, dolorem.
-        Suscipit earum incidunt reiciendis maiores, recusandae fugiat. Tempore, alias dicta amet corporis dolores <p class="hidewhite">"to see the light " </p> facilis earum, dolorem ut illum reprehenderit cumque sapiente laudantium voluptatum rerum nemo ab eaque laborum expedita tempora.
+        Suscipit earum incidunt reiciendis maiores, recusandae fugiat. Tempore, alias dicta amet corporis dolores  facilis earum, dolorem ut illum reprehenderit cumque sapiente laudantium voluptatum rerum nemo ab eaque laborum expedita tempora.
         Dignissimos dolorem necessitatibus eligendi molestias inventore, ratione nemo enim repudiandae quasi numquam. Aperiam doloremque qui error ipsum amet repellat assumenda totam enim cum eveniet, sed delectus explicabo veritatis maxime necessitatibus.
-        Sapiente sed, quisquam obcaecati unde ullam corrupti quidem nam nemo cupiditate, laboriosam omnis aliquam architecto iure dignissimos nostrum voluptatum cum maxime, et quod? Repudiandae, repellat ipsam. Cumque porro aliquam officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium magni natus, <p class="hidewhite"> THIS IS A HIDDEN TEXT</p> quod placeat culpa veniam dolorem saepe ea consectetur ut porro officiis quas quae! Esse eveniet impedit rem!</p>
+        Sapiente sed, quisquam obcaecati unde ullam corrupti quidem nam nemo cupiditate, laboriosam omnis aliquam architecto iure dignissimos nostrum voluptatum cum maxime, et quod? Repudiandae, repellat ipsam. Cumque porro aliquam officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium magni natus,  quod placeat culpa veniam dolorem saepe ea consectetur ut porro officiis quas quae! Esse eveniet impedit <p class="hidewhite">"to see the light " </p>rem!</p>
     </div>
+
+    <!-- <div id="balloon-container">
+    </div> -->
     <script src="js/script.js"></script>
 </body>
 </html>
